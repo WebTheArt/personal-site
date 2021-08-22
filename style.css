@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* header section */
+.header{
+    background-image: url(https://i.postimg.cc/Nf2WyXKm/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+}
+.header-para{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 220px;
+}
+.header-para h2{
+    font-size: 34px;
+    font-weight: 400;
+}
+.header-para h1{
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    display: inline-block;
+    color: #ec4c7a;
+    transition: .3s
+}
+.header-para h1:hover{
+    transform: scale(1.1);
+}
+.header-para p{
+    color: #686868;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    padding: 35px 0;
+}
+.header-para button{
+    padding: 8px 33px;
+    color: white;
+    background-image: linear-gradient(10deg, #ec5399, #ed4b6e);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    position: relative;
+    z-index: 1;
+}
+.header-para button::before{
+    content: "";
+    height: 100%;
+    width: 0%;
+    background-image: linear-gradient(40deg, #07f4c2, #3b92f8);
+    border-radius: 5px;
+    transition: .4s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.header-para button:hover::before{
+    width: 100%;
+}
+.header-para button{
+    cursor: pointer;
+}
+.header-img{
+    vertical-align: middle;
+    display: inline-block;
+    width: 520px;
+}
+.header-img img{
+    width: 100%;
+    transition: .4s;
+}
+
+/* biography section */
+.biography{
+    background-image: url(https://i.postimg.cc/WbhcVKmN/biography-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+.biography-img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 490px;
+}
+.biography-img img{
+    width: 100%;
+    transition: .4s;
+}
+.biography-para{
+    display: inline-block;
+    vertical-align: -20px;
+    width: 490px;
+    margin-left: 100px;
+    text-align: left;
+}
+.biography-para h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.biography-para p{
+    color: #686868;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 30px 0;
+}
+.biography-para button{
+    padding: 8px 33px;
+    color: white;
+    background-image: linear-gradient(45deg, #ec5399, #ed4b6e);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    position: relative;
+    z-index: 1;
+}
+.biography-para button::before{
+    content: "";
+    height: 100%;
+    width: 0%;
+    background-image: linear-gradient(40deg, #07f4c2, #3b92f8);
+    border-radius: 5px;
+    transition: .4s;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.biography-para button:hover::before{
+    width: 100%;
+}
+.biography-para button{
+    cursor: pointer;
+}
+/* latest work */
+.latest-work{
+    background-image: url(https://i.postimg.cc/90G23q56/latest-work-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+.latest-work h2{
+    font-size: 35px;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+.work{
+    display: inline-block;
+    width: 25%;
+    margin: 15px;
+    transition: .4s;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    margin-bottom: -7px;
+}
+.text{
+    transition: .4s;
+}
+.text p{
+    color: white;
+    font-size: 12px;
+    padding: 15px;
+    margin-top: 50px;
+}
+.text a{
+    padding: 8px 15px;
+    color: white;
+    background-image: linear-gradient(45deg, #ec5399, #ed4b6e);
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.text1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-100%);
+    background-color: rgba(8, 8, 8, 0.7);
+}
+.text2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    background-color: rgba(8, 8, 8, 0.7);
+    opacity: 0;
+    transform: translateY(-100%);
+}
+.text3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    background-color: rgba(8, 8, 8, 0.7);
+    opacity: 0;
+    transform: translate(100%);
+}
+
+.work:hover .text1{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0);
+}
+.work:hover .text2{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+.work:hover .text3{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0);
+}
+.img1:hover{
+    transform: scale(1.1) ;
+}
+.img2:hover{
+    transform: translateY(-15px) scale(1.1);
+}
+.img3:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+/* footer section */
+.footer{
+    background-image: url(https://i.postimg.cc/Pr9WVprX/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px;
+    text-align: center;
+}
+.footer h2{
+    color: #202428;
+    font-size: 35px;
+    font-weight: 500;
+}
+.footer h5{
+    font-size: 17px;
+    color: #202428;
+    font-weight: 600;
+    padding-top: 80px;
+}
+.footer h6{
+    color: #707070;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px;
+}
+.footer > p{
+    color: #343434;
+    font-size: 15px;
+    padding: 20px;
+}
+.message-box{
+    background-image: linear-gradient(66deg, #ec5299, #ed4b6d);
+    border-radius: 5px;
+    width: 600px;
+    padding: 33px;
+    margin: 40px auto;
+    position: relative;
+    z-index: 1;
+}
+.message-box::before{
+    content: "";
+    height: 0;
+    width: 100%;
+    border-radius: 5px;
+    background-image:linear-gradient(10deg, #07f4c2, #3b92f8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .3s;
+    z-index: -1;
+}
+.message-box:hover::before{
+    height: 100%;
+}
+.message-box:hover{
+    color: rgb(253, 244, 244);
+}
+.message-box p{
+    color: white;
+    font-size: 15px;
+}
+.message-box h4{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.footer-copyright{
+    text-align: center;
+    color: #666666;
+    padding: 30px;
+}
+.footer-copyright p{
+    transition: .3s;
+    display: inline-block;
+    font-size: 14px;
+}
+.footer-copyright p:hover{
+    color: #ed4b6e;
+}
